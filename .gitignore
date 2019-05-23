@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+# IDEA files
+.idea
+image_parcer.iml
+
+# export folders
+images
