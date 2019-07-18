@@ -12,8 +12,10 @@ function generateArrayImageName(startIndex = 0, count = 1) {
 }
 
 function downloadImage(imageName, callback) {
-    const imageFullName = `${imageName}.png`;
-    const url = `https://i.paste.pics/${imageFullName}`;
+    // const imageFullName = `${imageName}.png`;
+    // const url = `https://i.paste.pics/${imageFullName}`;
+    const imageFullName = `${imageName}.jpeg`;
+    const url = `https://lp2.hm.com/hmgoepprod?set=source[/70/a4/70a435575fb89a52ccad14ba9e8f3f3285e93573.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]`;
     const options = {
         directory: imageDirectory,
         filename: imageFullName
@@ -61,6 +63,6 @@ function start(startIndex, count, delay = 1000, maxStream = 10) {
         }, delay);
 }
 
-start("5LCLU", 1000, 300, 10);
+start("5LCLU", 100, 300, 10);
 
 
